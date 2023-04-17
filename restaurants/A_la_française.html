@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-    <header class="header">
-        <a href="/index.html"><i class="fa-solid fa-arrow-left"></i></a>
+    <header class="header-restaurant flex-row">
+        <a class="header__arrow" href="/index.html"><i class="fa-solid fa-arrow-left"></i></a>
         <img  class="header__heading" src="/assets/logo/ohmyfood.png">
     </header>
     <main>
@@ -50,7 +50,7 @@
             <ul class="menu__list">
                 <li class="menu__card">
                     <h3 class="menu__plats">Coquilles Saint-Jacques</h3>
-                    <div class="flex-row menu__prix">>
+                    <div class="flex-row menu__prix">
                     <p>Accompagnées d'une purée de panais</p>
                     <p>40<span class="euro">€</span></p>
                     </div>
@@ -94,16 +94,18 @@
                     </div>
                 </li>
             </ul>
+            <button class="information__button">Commander</button>
         </div>
-        <button class="information__button">Commander</button>
+        
     </main>
-    <footer class="footer">
+    <footer class="footer flex-column">
         <h3 class="footer__title">OhMyFood</h3>
-        <p>Proposez un restaurant</p>
-        <p>Devenir Partenaire</p>
-        <p>Mentions Légales</p>
-        <p>Contact</p>
+        <ul class="footer__block">
+            <li><span><i class="fa-sharp fa-solid fa-utensils"></i></span>Proposez un restaurant</li>
+            <li><span><i class="fa-solid fa-handshake-angle"></i></span>Devenir Partenaire</li>
+            <li>Mentions Légales</li>
+            <li>Contact</li>
+        </ul>
     </footer>
-    </div>
 </body>
 </html>

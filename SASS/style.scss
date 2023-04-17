@@ -1,0 +1,389 @@
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --main-color: #9356DC;
+    --second-color: #FF79DA;
+    --third-color: #99E2D0;
+
+}
+
+li {
+    list-style: none;
+    color:black;
+    
+}
+
+a{
+
+    text-decoration-line:none;
+}
+
+
+body{
+
+    display: grid;
+    
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/****** Page Principale ***********/
+
+/****** Menu ***********/
+.header {
+    text-align: center;
+
+}
+
+.header__heading {
+    width: 162px;
+    height: 44px;
+    margin: 14px 105px 0px 105px;
+}
+
+.header__location {
+    background-color: #EAEAEA;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    
+}
+
+
+/****** Partie Information ***********/
+
+.information{
+    background-color: #f7f7f7;
+    align-items: center;
+    padding: 40px 40px 58px 40px;
+}
+
+.information__title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    
+
+}
+
+
+.information__text {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+}
+
+.information__button {
+
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    width: 218px;
+    height: 50px;
+    color:white;
+    align-self: center;
+}
+
+/****** Partie Fonctionnement ***********/
+
+.operation{
+
+
+    padding-bottom: 40px;
+}
+
+.operation__title {
+
+    display: flex;
+    padding: 54px 0px 0px 20px;
+  
+  }
+.operation__list-btn {
+
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 0px 20px;
+
+}
+
+.operation__button {
+
+
+    background-color: #f7f7f7;
+    height: 72px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 26px;
+    
+}
+.operation__button__text {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.icons {
+    color: gray;
+}
+
+.choice {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.operation__number {
+    
+    position: absolute;
+    left: -20px;
+    background-color: #9356DC;
+    border-radius: 20px;
+    color: white;
+    width: 24px;
+    height:24px ;
+}
+
+    /****** Partie Restaurants ***********/
+
+.restaurants {
+    background-color: #f7f7f7;
+    padding-bottom: 66px;
+}
+
+.restaurants__title {
+
+    display: flex;
+    padding: 54px 0px 0px 20px;
+
+}
+
+.restaurants__list {
+
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+
+.restaurants__card {
+    background-color: white;
+    border-radius: 15px;
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.1));
+    margin: 0px 15px 20px 15px;
+    position: relative;
+}
+
+.restaurants__img {
+    height: 231px;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.restaurants__new {
+    position: absolute;
+    top: 0px;
+    right:40px;
+    background-color: #99E2D0;
+    color: #008766;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    width:80px;
+    height:30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.display__restaurants {
+ justify-content: space-between;
+ align-items: center;
+ padding: 0px 20px 0px 20px;
+}
+
+
+/****** A propos ***********/   
+.footer{
+    background: #353535;
+    color: white;
+    padding-left: 25px;
+}
+
+.footer__title {
+
+    font-family: 'Shrikhand', cursive;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+
+
+
+/****** Page Restaurants ***********/
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    padding: 0px 13px 0px 13px;
+    border-top-right-radius:20px ;
+    border-top-left-radius:20px ;
+    padding-bottom:50px;
+}
+
+.menu__name {
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__restaurant {
+
+    font-family: 'Shrikhand';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 41px;
+}
+
+.menu__img {
+
+    height: 231px;
+    object-fit: cover;
+    width: 100%;
+    height: 275px;
+
+}
+
+.menu__title {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 10px;
+    border-bottom: #99E2D0 solid 3px;
+    width:40px
+}
+
+.menu__list {
+
+    padding: 0px;
+
+}
+
+.menu__card {
+    
+    background-color: white;
+    border-radius: 15px;
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.1));
+    padding: 12px 15px 12px 15px;
+    margin-bottom: 12px;
+}
+
+.menu__plats {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0px;
+    
+}
+
+.menu__prix {
+
+    justify-content: space-between;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 18px;
+
+}
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+
+
+
+
+
+
+
+.operation__list-btn {
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.operation__button{
+
+    width: 30%;
+}
+
+
+
+.restaurants__list {
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 176px 80px 176px;
+
+}
+.restaurants__link {
+
+    width: 100%;
+}
+
+}
+
+                 
+                    
