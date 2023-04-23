@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>OhMyFood</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,77 +23,122 @@
             <h1 class="menu__restaurant">Le délice des sens</h1>
             <i class="fa-regular fa-heart header__icons"></i>
         </div>
-
         <h2 class="menu__title">ENTRÉES</h2>
-        <ul class="menu__list">
-            <li class="menu__card">
-                <h3 class="menu__plats">Tartare de thon</h3>
-                <div class="flex-row menu__prix">
-                <p>Assaisonné au yuzu</p>
-                <p>25<span class="euro">€</span></p>
+        <ul class="menu__list ">
+            <div class="menu__container flex-row">
+                <li class="menu__card">
+                        <h3 class="menu__plats">Tartare de thon</h3>
+                        <div class="flex-row menu__prix">
+                        <p>Assaisonné au yuzu</p>
+                        <p>25<span class="euro">€</span></p>
+                        </div>
+                </li>
+                <div class="menu__transition flex-row">
+                    <i class="fa-solid fa-check icons__transition"></i>
+                </div>           
+            </div>
+            <div class="menu__container flex-row">
+                <li class="menu__card">
+                    <h3 class="menu__plats">Bouchée de homard croustillant </h3>
+                    <div class="flex-row menu__prix">
+                    <p>Et sa farandole de petits légumes</p>
+                    <p>35<span class="euro">€</span></p>
+                    </div>
+                </li>
+                <div class="menu__transition flex-row">
+                    <i class="fa-solid fa-check icons__transition"></i>
                 </div>
-            </li>
-            <li class="menu__card">
-                <h3 class="menu__plats">Bouchée de homard croustillant </h3>
-                <div class="flex-row menu__prix">
-                <p>Et sa farandole de petits légumes</p>
-                <p>35<span class="euro">€</span></p>
-            </li>
-            <li class="menu__card">
-                <h3 class="menu__plats">Poulet rôti aux herbes de Provence </h3>
-                <div class="flex-row menu__prix">
-                <p>Et sa crème de truffe</p>
-                <p class="menu__prix">40<span class="euro">€</span></p>
+            </div>
+            <div class="menu__container flex-row">
+                <li class="menu__card">
+                    <h3 class="menu__plats">Poulet rôti aux herbes de Provence </h3>
+                    <div class="flex-row menu__prix">
+                    <p>Et sa crème de truffe</p>
+                    <p class="menu__prix">40<span class="euro">€</span></p>
+                    </div>
+                </li>
+                <div class="menu__transition flex-row">
+                    <i class="fa-solid fa-check icons__transition"></i>
                 </div>
-            </li>
+            </div> 
         </ul>
         <h2 class="menu__title">PLATS</h2>
         <ul class="menu__list">
-            <li class="menu__card">
-                <h3 class="menu__plats">Poulet rôti aux herbes de Provence </h3>
-                <div class="flex-row menu__prix">
-                <p>Et sa crème de truffe</p>
-                <p>40<span class="euro">€</span></p>
+            <div class="menu__container flex-row">
+                <li class="menu__card">
+                    <h3 class="menu__plats">Poulet rôti aux herbes de Provence </h3>
+                    <div class="flex-row menu__prix">
+                    <p>Et sa crème de truffe</p>
+                    <p>40<span class="euro">€</span></p>
+                    </div>
+                </li>
+                <div class="menu__transition flex-row">
+                    <i class="fa-solid fa-check icons__transition"></i>
                 </div>
-            </li>
-            <li class="menu__card">
-                <h3 class="menu__plats">Langouste rôtie </h3>
-                <div class="flex-row menu__prix">
-                <p>Et ses légumes de saison</p>
-                <p>35<span class="euro">€</span></p>
+            </div> 
+            <div class="menu__container flex-row">
+                <li class="menu__card">
+                    <h3 class="menu__plats">Langouste rôtie </h3>
+                    <div class="flex-row menu__prix">
+                    <p>Et ses légumes de saison</p>
+                    <p>35<span class="euro">€</span></p>
+                    </div>
+                </li>
+                <div class="menu__transition flex-row">
+                    <i class="fa-solid fa-check icons__transition"></i>
                 </div>
-            </li>
-            <li class="menu__card">
-                <h3 class="menu__plats">Côte de bœuf Angus </h3>
-                <div class="flex-row menu__prix">
-                <p>Et sa purée de panais</p>
-                <p>44<span class="euro">€</span></p>
+            </div>
+            <div class="menu__container flex-row">
+                <li class="menu__card">
+                    <h3 class="menu__plats">Côte de bœuf Angus </h3>
+                    <div class="flex-row menu__prix">
+                    <p>Et sa purée de panais</p>
+                    <p>44<span class="euro">€</span></p>
+                    </div>
+                </li>
+                <div class="menu__transition flex-row">
+                    <i class="fa-solid fa-check icons__transition"></i>
                 </div>
-            </li>
+            </div>
         </ul>
         <h2 class="menu__title">DESSERTS</h2>
         <ul class="menu__list">
-            <li class="menu__card">
-                <h3 class="menu__plats">Œuf au plat</h3>
-                <div class="flex-row menu__prix">
-                <p>Assaisonné à la truffe sur lit de caviar</p>
-                <p>76<span class="euro">€</span></p>
+            <div class="menu__container flex-row">
+                <li class="menu__card">
+                    <h3 class="menu__plats">Œuf au plat</h3>
+                    <div class="flex-row menu__prix">
+                    <p>Assaisonné à la truffe sur lit de caviar</p>
+                    <p>76<span class="euro">€</span></p>
+                    </div>
+                </li>
+                <div class="menu__transition flex-row">
+                    <i class="fa-solid fa-check icons__transition"></i>
+                </div> 
+            </div>
+            <div class="menu__container flex-row">
+                <li class="menu__card">
+                    <h3 class="menu__plats">Crème brulée </h3>
+                    <div class="flex-row menu__prix">
+                    <p>Revisitée</p>
+                    <p>22<span class="euro">€</span></p>
+                    </div>
+                </li>
+                <div class="menu__transition flex-row">
+                    <i class="fa-solid fa-check icons__transition"></i>
                 </div>
-            </li>
-            <li class="menu__card">
-                <h3 class="menu__plats">Crème brulée </h3>
-                <div class="flex-row menu__prix">
-                <p>Revisitée</p>
-                <p>22<span class="euro">€</span></p>
-                </div>
-            </li>
-            <li class="menu__card">
-                <h3 class="menu__plats">Tiramisu </h3>
-                <div class="flex-row menu__prix">
-                <p>À la noisette</p>
-                <p>23<span class="euro">€</span></p>
-                </div>
-            </li>
+            </div> 
+            <div class="menu__container flex-row">
+                <li class="menu__card">
+                    <h3 class="menu__plats">Tiramisu </h3>
+                    <div class="flex-row menu__prix">
+                    <p>À la noisette</p>
+                    <p>23<span class="euro">€</span></p>
+                    </div>
+                </li>
+                <div class="menu__transition flex-row">
+                    <i class="fa-solid fa-check icons__transition"></i>
+                </div> 
+            </div>
         </ul>
         <button class="information__button">Commander</button>
         </div>
