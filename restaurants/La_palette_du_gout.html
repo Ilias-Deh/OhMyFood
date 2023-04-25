@@ -12,16 +12,21 @@
     <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
+
+    
     <header class="header-restaurant flex-row">
         <a class="header__arrow" href="/index.html"><i class="fa-solid fa-arrow-left"></i></a>
-        <img class="header__heading" src="/assets/logo/ohmyfood.png">
+        <img class="header__heading--title" src="/assets/logo/ohmyfood.png">
     </header>
     <main>
         <img class="menu__img" src="/assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
         <div class="menu">
         <div class="flex-row menu__name">
             <h1 class="menu__restaurant">La palette du goût</h1>
-            <i class="fa-regular fa-heart"></i>
+            <div class="menu__icon">
+                <i class="fa-regular fa-heart fa-2x menu__icons--empty"></i>
+                <i class="fa-solid fa-heart fa-2x menu__icons--full"></i>
+            </div>
         </div>
         <h2 class="menu__title">ENTRÉES</h2>
         
@@ -31,9 +36,9 @@
             <div class="menu__container flex-row">
                 <li class="menu__card">
                     <h3 class="menu__plats">Fricassée d'escargots</h3>
-                    <div class="flex-row menu__prix">
+                    <div class="flex-row menu__description">
                     <p>Au piment d'Espelette </p>
-                    <p>25<span class="euro">€</span></p>
+                    <p class="menu__price">25<span class="euro">€</span></p>
                     </div>
                 </li>
                 <div class="menu__transition flex-row">
@@ -43,9 +48,9 @@
             <div class="menu__container flex-row">
                 <li class="menu__card">
                     <h3 class="menu__plats">Foie gras de canard mi-cuit</h3>
-                    <div class="flex-row menu__prix">
+                    <div class="flex-row menu__description">
                     <p>Et ses copeaux de truffe noire</p>
-                    <p>35<span class="euro">€</span></p>
+                    <p class="menu__price">35<span class="euro">€</span></p>
                     </div>
                 </li>
                 <div class="menu__transition flex-row">
@@ -55,9 +60,9 @@
             <div class="menu__container flex-row">
                 <li class="menu__card">
                     <h3 class="menu__plats">Œuf au plat</h3>
-                    <div class="flex-row menu__prix">
+                    <div class="flex-row menu__description">
                     <p>Assaisonné à la truffe sur lit de caviar</p>
-                    <p>20<span class="euro">€</span></p>
+                    <p class="menu__price">20<span class="euro">€</span></p>
                     </div>
                 </li>
                 <div class="menu__transition flex-row">
@@ -66,13 +71,13 @@
             </div>
         </ul>
         <h2 class="menu__title">PLATS</h2>
-        <ul class="menu__list">
+        <ul class="menu__list--second">
             <div class="menu__container flex-row">
                 <li class="menu__card">
                     <h3 class="menu__plats">Filet de bœuf aux herbes</h3>
-                    <div class="flex-row menu__prix">
+                    <div class="flex-row menu__description">
                     <p>Accompagné de sa ribambelle de légumes</p>
-                    <p>35<span class="euro">€</span></p>
+                    <p class="menu__price">35<span class="euro">€</span></p>
                     </div>
                 </li>
                 <div class="menu__transition flex-row">
@@ -82,9 +87,9 @@
             <div class="menu__container flex-row">
                 <li class="menu__card">
                     <h3 class="menu__plats">Parmentier de queue de bœuf</h3>
-                    <div class="flex-row menu__prix">
+                    <div class="flex-row menu__description">
                     <p>À la truffe noire sur sa purée de panais</p>
-                    <p>35<span class="euro">€</span></p>
+                    <p class="menu__price">35<span class="euro">€</span></p>
                     </div>
                 </li>
                 <div class="menu__transition flex-row">
@@ -94,9 +99,9 @@
             <div class="menu__container flex-row">
                 <li class="menu__card">
                     <h3 class="menu__plats">Filet de turbot</h3>
-                    <div class="flex-row menu__prix">
+                    <div class="flex-row menu__description">
                     <p>Aux agrumes</p>
-                    <p>44<span class="euro">€</span></p>
+                    <p class="menu__price">44<span class="euro">€</span></p>
                     </div>
                 </li>
                 <div class="menu__transition flex-row">
@@ -105,13 +110,13 @@
             </div>
         </ul>
         <h2 class="menu__title" >DESSERTS</h2>
-        <ul class="menu__list">
+        <ul class="menu__list--third">
             <div class="menu__container flex-row">
                 <li class="menu__card">
                     <h3 class="menu__plats">Paris-Brest</h3>
-                    <div class="flex-row menu__prix">
+                    <div class="flex-row menu__description">
                     <p>Revisité</p>
-                    <p>18<span class="euro">€</span></p>
+                    <p class="menu__price">18<span class="euro">€</span></p>
                     </div>
                 </li>
                 <div class="menu__transition flex-row">
@@ -121,9 +126,9 @@
             <div class="menu__container flex-row">
                 <li class="menu__card">
                     <h3 class="menu__plats">Macaron au chocolat d'exception </h3>
-                    <div class="flex-row menu__prix">
+                    <div class="flex-row menu__description">
                     <p>Et glace à la vanille de Madagascar</p>
-                    <p>22<span class="euro">€</span></p>
+                    <p class="menu__price">22<span class="euro">€</span></p>
                     </div>
                 </li>
                 <div class="menu__transition flex-row">
@@ -133,9 +138,9 @@
             <div class="menu__container flex-row">
                 <li class="menu__card">
                     <h3 class="menu__plats">Mousse au chocolat </h3>
-                    <div class="flex-row menu__prix">
+                    <div class="flex-row menu__description">
                     <p>Au piment d'Espelette et à la truffe noire</p>
-                    <p>23<span class="euro">€</span></p>
+                    <p class="menu__price">23<span class="euro">€</span></p>
                     </div>
                 </li>
                 <div class="menu__transition flex-row">
