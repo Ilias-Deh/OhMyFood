@@ -13,7 +13,13 @@
     <link rel="stylesheet" href="assets/normalize.css">
     <link rel="stylesheet" href="assets/style.css">
 </head>
-<body class="">
+<body class="container">
+    <div class="load-container">
+        <i class="fa-solid fa-5x fa-circle load--icons"></i>
+        <i class="fa-solid fa-5x fa-circle load--icons--second"></i>
+        <i class="fa-solid fa-5x fa-circle load--icons--third"></i>
+    </div>
+    
     <header class="header">
         <div class="header__heading">
             <img class="header__heading--title" src="assets/logo/ohmyfood.png">
@@ -125,11 +131,12 @@
     <footer class="footer flex-column">
         <h3 class="footer__title">OhMyFood</h3>
         <ul class="footer__block">
-            <li><span><i class="fa-sharp fa-solid fa-utensils"></i></span>Proposez un restaurant</li>
-            <li><span><i class="fa-solid fa-handshake-angle"></i></span>Devenir Partenaire</li>
+            <li class="footer--text"><span><i class="fa-sharp fa-solid fa-utensils footer__icons"></i></span>Proposez un restaurant</li>
+            <li class="footer--text"><span><i class="fa-solid fa-handshake-angle footer__icons--second"></i></span>Devenir Partenaire</li>
             <li>Mentions Légales</li>
             <li>Contact</li>
         </ul>
     </footer>
+
 </body>
 </html>
