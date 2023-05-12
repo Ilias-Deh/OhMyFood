@@ -11,18 +11,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/normalize.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="sass/style.css">
 </head>
 <body class="container">
     <div class="load-container">
         <i class="fa-solid fa-5x fa-circle load--icons"></i>
         <i class="fa-solid fa-5x fa-circle load--icons--second"></i>
         <i class="fa-solid fa-5x fa-circle load--icons--third"></i>
-    </div>
-    
+    </div>  
     <header class="header">
         <div class="header__heading">
-            <img class="header__heading--title" src="assets/logo/ohmyfood.png">
+            <img class="header__heading--title" src="assets/logo/ohmyfood.png" alt="Logo OhMyFood">
         </div>
         <p class="header__location flex-row"><span><i class="fa-sharp fa-solid fa-location-dot location__icons"></i></span>Paris, Belleville</p>
     </header>
@@ -35,35 +34,38 @@
         <div class="operation flex-column">
         <h2 class="operation__title">Fonctionnement</h2>
         <ul class="operation__list-btn">
-            <button class="operation__button">
+            
                 <li class="operation__button__text">
-                    <p class="operation__number flex-column">1</p>
-                    <i class="fa-solid fa-mobile-screen-button icons"></i>
-                    <p class="choice">Choisssisez un restaurant</p>
+                    <p class="operation__number flex-row">1</p>
+                    <button class="operation__button">    
+                        <i class="fa-solid fa-mobile-screen-button icons"></i>
+                        Choisssisez un restaurant
+                    </button>
                 </li>
-                </button>
-            <button class="operation__button">
+
                 <li class="operation__button__text">
-                    <p class="operation__number flex-column">2</p>
-                    <i class="fa-solid fa-list-ul icons"></i>
-                    <p class="choice">Composez votre menu</p>
+                    <p class="operation__number flex-row">2</p>
+                    <button class="operation__button">       
+                        <i class="fa-solid fa-list-ul icons"></i>
+                        Composez votre menu
+                    </button>
                 </li>
-            </button>
-            <button class="operation__button">
                 <li class="operation__button__text">
-                    <p class="operation__number flex-column">3</p>
-                    <i class="fa-solid fa-store icons" style="color:#9356DC"></i>
-                    <p class="choice">Dégustez un restaurant</p>
+                    <p class="operation__number flex-row">3</p>
+                    <button class="operation__button">
+                        <i class="fa-solid fa-store icons" style="color:#9356DC"></i>
+                        Dégustez un restaurant
+                    </button>
                 </li>
-            </button>
         </ul>
         </div>
         <section class="restaurants flex-column">
             <h2 class="restaurants__title flex-column">Restaurants</h2>
             <ul class="restaurants__list">
-                <a class="restaurants__link"  href="restaurants/La_palette_du_gout.html">
+                
                 <li class="restaurants__card">
-                    <img class="restaurants__img" src="assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+                    <a href="restaurants/La_palette_du_gout.html">
+                    <img class="restaurants__img" src="assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image du Restaurant La palette du gout">
                     <p class="restaurants__new flex-column">Nouveau</p>
                     <div class="flex-row display__restaurants">
                         <div class="flex-column">
@@ -75,11 +77,11 @@
                             <i class="fa-solid fa-heart fa-2x restaurant__icons--full"></i>
                         </div>
                     </div>
-                </li>
                 </a>
-                <a class="restaurants__link" href="restaurants/La_note_enchantee.html">
+                </li>                   
                 <li class="restaurants__card">
-                    <img class="restaurants__img" src="assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
+                    <a href="restaurants/La_note_enchantee.html">
+                    <img class="restaurants__img" src="assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Image du Restaurant La note enchantee">
                     <p class="restaurants__new flex-column">Nouveau</p>
                     <div class="flex-row display__restaurants">
                         <div class="flex-column">
@@ -91,13 +93,14 @@
                             <i class="fa-solid fa-heart fa-2x restaurant__icons--full"></i>
                         </div>
                     </div>
-                </li>
                 </a>
+                </li>
+                
             </ul>
-            <ul class="restaurants__list">
-                <a  class="restaurants__link" href="restaurants/A_la_française.html">
+            <ul class="restaurants__list">          
                 <li class="restaurants__card">
-                    <img class="restaurants__img" src="assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+                    <a href="restaurants/A_la_française.html">
+                    <img class="restaurants__img" src="assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image du Restaurant A la française">
                     <div class="flex-row display__restaurants">
                         <div class="flex-column">
                             <h3 class="restaurants--text">À la française</h3>
@@ -108,11 +111,11 @@
                             <i class="fa-solid fa-heart fa-2x restaurant__icons--full"></i>
                         </div>
                     </div>
+                    </a>
                     </li>
-                </a>
-                <a class="restaurants__link" href="restaurants/Le_delice_des_sens.html">
                 <li class="restaurants__card">
-                    <img class="restaurants__img" src="assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
+                    <a href="restaurants/Le_delice_des_sens.html">
+                    <img class="restaurants__img" src="assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Image du Restaurant Le délice des sens">
                     <div class="flex-row display__restaurants">
                         <div class="flex-column">
                             <h3 class="restaurants--text">Le délice des sens</h3>
@@ -123,8 +126,8 @@
                             <i class="fa-solid fa-heart fa-2x restaurant__icons--full"></i>
                         </div>
                     </div>
+                    </a>
                 </li>
-                </a>
             </ul>
         </section>
     </main>
@@ -134,7 +137,7 @@
             <li class="footer--text"><span><i class="fa-sharp fa-solid fa-utensils footer__icons"></i></span>Proposez un restaurant</li>
             <li class="footer--text"><span><i class="fa-solid fa-handshake-angle footer__icons--second"></i></span>Devenir Partenaire</li>
             <li>Mentions Légales</li>
-            <li>Contact</li>
+            <li><a href="#@">Contact</a></li>
         </ul>
     </footer>
 

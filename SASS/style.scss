@@ -1,5 +1,6 @@
 *{
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
 :root {
@@ -38,6 +39,81 @@ body{
 }
 
 /****** Page Principale ***********/
+
+.container {
+
+  
+}
+
+.load-container {
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 1;
+  z-index:1;
+  position: fixed;
+  display: flex;
+  align-items: center;
+	justify-content: center;
+  animation: loader 4s;
+  animation-delay: 1s ;
+  animation-fill-mode: forwards;
+  }
+
+  @keyframes loader{
+    0% {
+        opacity: 1;
+        z-index: 1;
+        
+        
+    }
+    100% {
+        opacity:0;
+        z-index:-1;
+    }
+  }
+
+  .load--icons {
+
+    animation: icons 3s linear infinite;
+    animation-direction: normal;
+    margin-right: 20px;
+}
+
+.load--icons--second {
+
+  animation: icons 3s linear infinite;
+  animation-delay: 300ms;
+  animation-direction: normal;
+  margin-right: 20px;
+}
+
+.load--icons--third {
+
+  animation: icons 3s linear infinite;
+  animation-delay: 600ms;
+  animation-direction: normal;
+  margin-right: 20px;
+}
+
+@keyframes icons {
+
+    25% {
+      transform: translateY(100%);
+    }
+
+    75% {
+      transform: translateY(-100%);
+    }
+    
+}
+
+
+
+
+
+
+
 
 /****** Menu ***********/
 .header {
@@ -111,6 +187,11 @@ body{
   color:white;
   align-self: center;
   transition: all 1000ms;
+  font-family: 'Roboto',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .information__button:hover {
@@ -281,9 +362,6 @@ body{
      
 }
 
-
-
-
 .restaurant__icons--full:hover {
       opacity: 1;
       background-image: linear-gradient(#FF79DA, #9356DC);
@@ -327,6 +405,25 @@ padding: 0px;
 .footer__block li { 
   color: white;
   padding: 0px 0px 10px 0px;
+}
+
+.footer__icons {
+
+  margin-right:12px; 
+}
+
+.footer__icons--second {
+
+  margin-right:6px; 
+}
+
+.footer--text {
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 /****** Page Restaurants ***********/
@@ -382,7 +479,7 @@ padding: 0px;
 
 .menu__title {
 
-  font-family: 'Roboto';
+  font-family: 'Roboto',sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -432,6 +529,8 @@ padding: 0px;
 .menu__container {
 
   width: 100%;
+  height: 70px;
+  margin-bottom: 12px;
 }
 
 .menu__icons {
@@ -480,14 +579,13 @@ padding: 0px;
   border-radius: 15px;
   filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.1));
   padding: 12px 15px 12px 15px;
-  margin-bottom: 12px;
-  
+  transition: all 2s;
   
 }
 
 .menu__transition {
   
-  height: 100px;
+  height: 70px;
   width: 0;
   background-color: #99E2D0;
   margin-bottom: 12px;
@@ -496,7 +594,7 @@ padding: 0px;
   justify-content: center;
   align-items: center;
   transform-origin: right;
-  transition: all 2s;
+  transition: all 1s;
   
   
 }
@@ -538,7 +636,7 @@ padding: 0px;
 
 .menu__plats {
 
-  font-family: 'Roboto';
+  font-family: 'Roboto',sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -550,22 +648,36 @@ padding: 0px;
 .menu__description {
 
   justify-content: space-between;
-  font-family: 'Roboto';
+  font-family: 'Roboto',sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
+  padding-top: 5px;
 
 }
 
-.menu__price {
+.menu--detail {
+
+  margin: 0px;
+}
+
+.menu--price {
 
   font-weight: 700;
+  margin: 0px;
 }
 
 
 @media (min-width: 1024px) {
 
+
+
+
+.header__heading--title {
+    width: 200px;
+    height: 40px;
+  }
 
 
 .operation {
@@ -591,9 +703,10 @@ padding: 0px;
 
 .menu {
 
-  width:70%;
-  margin-left:250px;
-  margin-right:250px;
+  width:100%;
+  max-width: 1024px;
+  margin:0 auto -30px auto;
+  top: -30px;
   padding: 50px 200px 40px 200px;
 }
 
